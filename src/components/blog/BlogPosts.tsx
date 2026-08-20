@@ -6,7 +6,7 @@ import { Const } from "../../Const";
 import { DateFormattingHelper } from "../../helpers/DateFormattingHelper";
 
 interface ActionButtonProps {
-  active: boolean;
+  $active: boolean;
 }
 
 interface BlogPostsState {
@@ -16,7 +16,7 @@ interface BlogPostsState {
   lastPage: number;
 }
 
-const ActionButton = styled.div<{active: boolean}>`
+const ActionButton = styled.div<{ $active: boolean }>`
   font-family: 'Lato', sans-serif;
   border: none;
   padding: 15px 32px;
@@ -26,9 +26,9 @@ const ActionButton = styled.div<{active: boolean}>`
   font-size: 16px;
   cursor: pointer;
   background-color: ${(props: ActionButtonProps) =>
-    props.active ? "#fcc600" : "#cccccc"};
+    props.$active ? "#fcc600" : "#cccccc"};
   color: ${(props: ActionButtonProps) =>
-    props.active ? "#000000" : "#666666"};
+    props.$active ? "#000000" : "#666666"};
 `;
 
 const PageIndicator = styled.div`
@@ -183,7 +183,7 @@ export class BlogPosts extends React.Component<{}, BlogPostsState> {
         <PagingContainer>
           <ActionButton
             onClick={this.getPreviousPage}
-            active={currentPage !== 1}
+            $active={currentPage !== 1}
           >
             Back
           </ActionButton>
@@ -191,7 +191,7 @@ export class BlogPosts extends React.Component<{}, BlogPostsState> {
 
           <ActionButton
             onClick={this.getNextPage}
-            active={currentPage !== lastPage}
+            $active={currentPage !== lastPage}
           >
             Next
           </ActionButton>
