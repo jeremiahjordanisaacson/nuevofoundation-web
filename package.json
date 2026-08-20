@@ -13,7 +13,6 @@
     "bootstrap": "^5.3.8",
     "dotenv-cli": "^10.0.0",
     "env-cmd": "^11.0.0",
-    "handlebars": "^4.7.7",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.10",
     "react-countup": "^6.5.3",
@@ -21,11 +20,10 @@
     "react-ga": "^3.3.1",
     "react-lottie": "^1.2.10",
     "react-pdf": "^10.1.0",
-    "react-router-dom": "^6.30.1",
+    "react-router-dom": "^6.30.4",
     "react-router-hash-link": "^1.2.2",
     "react-visibility-sensor": "^5.1.1",
-    "serialize-javascript": "^6.0.2",
-    "styled-components": "^6.1.19"
+    "styled-components": "^6.5.2"
   },
   "scripts": {
     "watch": "react-scripts start",
@@ -57,14 +55,23 @@
     "identity-obj-proxy": "^3.0.0",
     "jest-watch-typeahead": "^3.0.1",
     "react-scripts": "^5.0.1",
-    "typescript": "^5.9.2",
-    "uuid": "^13.0.0"
+    "typescript": "^5.9.2"
   },
   "engines": {
     "node": "22.x"
   },
   "resolutions": {
     "@types/react": "*"
+  },
+  "overrides": {
+    "nth-check": "^2.1.1",
+    "serialize-javascript": "^7.1.0",
+    "postcss": "^8.5.26",
+    "resolve-url-loader": "^5.0.0",
+    "@tootallnate/once": "^2.0.1",
+    "sockjs": {
+      "uuid": "^11.1.1"
+    }
   },
   "browserslist": [
     ">0.2%",
