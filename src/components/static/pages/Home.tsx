@@ -453,7 +453,11 @@ export class Home extends React.Component<{}, StatProps> {
             </LogoSectionImageContent>
 
             <LogoSectionImageContent>
-              <div className="apply-logo-css-filter"><a href="https://boldjourney.com/meet-beatris-mendez-gandica/" target="_blank" rel="noreferrer"><img src={BoldJourneyLogoImage} alt="Bold Journey Logo" /></a></div>
+              <div className="apply-logo-css-filter"><a href="https://boldjourney.com/meet-beatris-mendez-gandica/" target="_blank" rel="noreferrer"><img src={BoldJourneyLogoImage} alt="Bold Journey Logo - Beatris Mendez Gandica" /></a></div>
+            </LogoSectionImageContent>
+
+            <LogoSectionImageContent>
+              <div className="apply-logo-css-filter"><a href="https://boldjourney.com/meet-ximena-cortez/" target="_blank" rel="noreferrer"><img src={BoldJourneyLogoImage} alt="Bold Journey Logo - Ximena Cortez" /></a></div>
             </LogoSectionImageContent>
 
           </LogoSection>
