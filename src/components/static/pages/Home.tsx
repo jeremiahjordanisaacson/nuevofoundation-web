@@ -26,7 +26,6 @@ import { HashLink as Link } from 'react-router-hash-link';
 import { ServiceResolver } from "../../../services/ServiceResolver";
 import { MetaDataInterface, ImpactStatInterface } from "../../../models/MetaData";
 import CountUp from 'react-countup';
-import VisibilitySensor from 'react-visibility-sensor';
 
 const AboveFoldContent = styled.div`
   background-repeat: none;
@@ -50,39 +49,21 @@ const AboveFoldContent = styled.div`
 `;
 
 const CountUpComponentToSeventyFour = () => (
-  <>
-    <CountUp start={10} duration={5} end={74} redraw={true}>
-      {({ countUpRef, start }) => (
-        <VisibilitySensor onChange={start} delayedCall>
-          <span ref={countUpRef} />
-        </VisibilitySensor>
-      )}
-    </CountUp>
-  </>
+  <CountUp start={10} duration={5} end={74} enableScrollSpy scrollSpyOnce>
+    {({ countUpRef }) => <span ref={countUpRef} />}
+  </CountUp>
 );
 
 const CountUpComponentToThirtySix = () => (
-  <>
-    <CountUp start={10} duration={5} end={36} redraw={true}>
-      {({ countUpRef, start }) => (
-        <VisibilitySensor onChange={start} delayedCall>
-          <span ref={countUpRef} />
-        </VisibilitySensor>
-      )}
-    </CountUp>
-  </>
+  <CountUp start={10} duration={5} end={36} enableScrollSpy scrollSpyOnce>
+    {({ countUpRef }) => <span ref={countUpRef} />}
+  </CountUp>
 );
 
 const CountUpComponentToThirteen = () => (
-  <>
-    <CountUp start={10} duration={5} end={13} redraw={true}>
-      {({ countUpRef, start }) => (
-        <VisibilitySensor onChange={start} delayedCall>
-          <span ref={countUpRef} />
-        </VisibilitySensor>
-      )}
-    </CountUp>
-  </>
+  <CountUp start={10} duration={5} end={13} enableScrollSpy scrollSpyOnce>
+    {({ countUpRef }) => <span ref={countUpRef} />}
+  </CountUp>
 );
 
 
